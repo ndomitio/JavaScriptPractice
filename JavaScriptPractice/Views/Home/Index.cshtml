@@ -2,6 +2,9 @@
     ViewBag.Title = "Home Page";
 }
 
+
+<script src="~/Scripts/JavaScriptPractice.js"></script>
+<link href="~/Scripts/Site.css" rel="stylesheet" />
 <h1>JavaScript Practice</h1>
 
 <html>
@@ -9,10 +12,43 @@
     <title></title>
 
 </head>
-<body>
+<body onload="toggleNav()">
+    <nav>
+        <div ></div>
+    </nav>
+
+    <script>
+        function toggleNav() {
+            alert("It works");
+        }
+    </script>
+    @*<p onclick="myScript()">Click me!</p>*@
+
     <div id="test"></div>
     <script>
+        //global variable, outside of function
+        //var person = "Daniel";
+        //function myScript() {
+        //    //local scope
+        //    var person = "Daniel";
+        //    document.write(person);
+        //}
+        //myScript();
+        //function myScript() {
+        //    document.write("clicked");
+        //}
+        //var x = 10;
+        //x = 10 + 5;
+        //x += 5;
+        //x *= 5;
 
+        //these two will give 5, then 6 (5+1) and 4 (5-1)
+        //5++
+        //5--
+
+        ////these two will give 6 (1+5) and 4 (5-1) at first
+        //++5
+        //--5
 
         //store properties to an object
         //var person = { name: "Daniel", age:25, numberOfLegs: 2};
@@ -32,11 +68,13 @@
         //document.write(person);
         //console is great for testing and seeing what is going on
         console.log("Hi there!");
-                //document.getElementById("test").innerHTML = "Hi there again!";
-                //document.write("Hi There!");
-                //////alert("Hi there!");
+            //document.getElementById("test").innerHTML = "Hi there again!";
+            //document.write("Hi There!");
+            //alert("Hi there!");
+
+
     </script>
-    <script src="~/Scripts/JavaScriptPractice.js"></script>
+
 </body>
 </html>
 
