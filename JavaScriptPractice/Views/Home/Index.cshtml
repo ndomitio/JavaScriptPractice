@@ -77,16 +77,23 @@
 
         //var dog;
         //dog = "Frida";
-        var person = {
-            firstname: "Daniel",
-            lastname: "Nielsen",
-            age: 25,
-            haircolor: "Brown",
-            fullname: function () {
-                return "The persons name is " + this.firstname + " " + this.lastname;
-            }
-        }
-        document.write(person.fullname());
+        //var person = {
+        //    firstname: "Daniel",
+        //    lastname: "Nielsen",
+        //    age: 25,
+        //    haircolor: "Brown",
+        //    fullname: function () {
+        //        return "The persons name is " + this.firstname + " " + this.lastname;
+        //    }
+        //}
+        //document.write(person.fullname());
+
+        var first = "Daniel";
+        var last = "Nielsen";
+        function fullName() {
+            return "<p class=''>" + first + " " + last + "</p>";
+        } 
+        document.write(fullName());
         //too much code, lets use a method instead! document.write(person.firstname + " " + person.lastname);
         //document.write(person.age);
 
