@@ -19,26 +19,46 @@
         </nav>*@
 
     <script>
-                //variable that is equal to a value is also an object
+                        //variable that is equal to a value is also an object
 
-                    //var navStatus = true;
-                    //function toggleNav() {
-                    //    if (navStatus == true) {
-                    //        document.getElementById("closenav").style.left = "-300px";
-                    //        navStatus = false;
-                    //    }
-                    //    else if (navStatus == false) {
-                    //        document.getElementById("closenav").style.left = "0px";
-                    //        navStatus = true;
-                    //    }
+                            //var navStatus = true;
+                            //function toggleNav() {
+                            //    if (navStatus == true) {
+                            //        document.getElementById("closenav").style.left = "-300px";
+                            //        navStatus = false;
+                            //    }
+                            //    else if (navStatus == false) {
+                            //        document.getElementById("closenav").style.left = "0px";
+                            //        navStatus = true;
+                            //    }
 
-                        //alert("It works");
-                    }
+                                //alert("It works");
+                            //}
     </script>
     @*<p onclick="myScript()">Click me!</p>*@
 
-    <div id="test"></div>
+    //date manipulation and formats
+
+
+    <p id="test"></p>
     <script>
+        var date = new Date("Mar 15 2015");
+        //var date = new Date(99, 06, 11, 12, 32, 23, 23);
+        //var date = new Date("2016-12-29");
+        //var date = new Date(5000); will measure the time stamp 5000 milliseconds from the initial time
+        //full format by default
+        document.getElementById("test").innerHTML = date.toDateString(); 
+        ////can also use to UTC string
+
+    </script>
+    <script>
+        //var x = 9.656;
+        //x.toFixed(0);
+        //(100 + 23).valueOf();
+
+
+
+
         //global variable, outside of function
         //var person = "Daniel";
         //function myScript() {
@@ -80,20 +100,22 @@
         //var person = {
         //    firstname: "Daniel",
         //    lastname: "Nielsen",
-        //    age: 25,
-        //    haircolor: "Brown",
         //    fullname: function () {
-        //        return "The persons name is " + this.firstname + " " + this.lastname;
+        //        return this.firstname + " " + this.lastname;
         //    }
         //}
-        //document.write(person.fullname());
+        //search for characters/words .search
+        //checks length of string dog . length
+        //document.write(dog.search(""));
 
-        var first = "Daniel";
-        var last = "Nielsen";
-        function fullName() {
-            return "<p class=''>" + first + " " + last + "</p>";
-        } 
-        document.write(fullName());
+        //var first = "Daniel";
+        //var last = "Nielsen";
+        //function fullName() {
+        //    return "<p class=''>" + first + " " + last + "</p>";
+        //}
+        //document.write(fullName());
+
+
         //too much code, lets use a method instead! document.write(person.firstname + " " + person.lastname);
         //document.write(person.age);
 
@@ -101,9 +123,9 @@
         //document.write(person);
         //console is great for testing and seeing what is going on
         console.log("Hi there!");
-                    //document.getElementById("test").innerHTML = "Hi there again!";
-                    //document.write("Hi There!");
-                    //alert("Hi there!");
+                        //document.getElementById("test").innerHTML = "Hi there again!";   .innerHTML use for more practical application in websites
+                        //document.write("Hi There!");  .write used inside functions used to test
+                        //alert("Hi there!");
 
 
     </script>
