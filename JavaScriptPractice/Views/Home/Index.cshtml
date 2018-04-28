@@ -19,35 +19,57 @@
         </nav>*@
 
     <script>
-                        //variable that is equal to a value is also an object
+        //variable that is equal to a value is also an object
 
-                            //var navStatus = true;
-                            //function toggleNav() {
-                            //    if (navStatus == true) {
-                            //        document.getElementById("closenav").style.left = "-300px";
-                            //        navStatus = false;
-                            //    }
-                            //    else if (navStatus == false) {
-                            //        document.getElementById("closenav").style.left = "0px";
-                            //        navStatus = true;
-                            //    }
+        //var navStatus = true;
+        //function toggleNav() {
+        //    if (navStatus == true) {
+        //        document.getElementById("closenav").style.left = "-300px";
+        //        navStatus = false;
+        //    }
+        //    else if (navStatus == false) {
+        //        document.getElementById("closenav").style.left = "0px";
+        //        navStatus = true;
+        //    }
 
-                                //alert("It works");
-                            //}
+        //alert("It works");
+        //}
     </script>
     @*<p onclick="myScript()">Click me!</p>*@
 
-    //date manipulation and formats
-
-
+    
     <p id="test"></p>
+    @*<p id="testa"></p>
+    <br />
+    <p id="testb"></p>*@
+    
     <script>
-        var date = new Date("Mar 15 2015");
+        var person = { firstName: "Daniel", lastName: "Nielsen", age: 25 };
+        document.getElementById("test").innerHTML = person.age;
+        //var name1 = "Daniel";
+        //var name2 = "John";
+        //var name3 = "Jane";
+
+        //var names = ["Daniel", "John", "Jane"]
+
+        //document.getElementById("test").innerHTML = names[0];
+
+        //.getDate exists within JS language
+        //var getDate = new Date();
+        //document.getElementById("testa").innerHTML = "The date is " + getDate.getDate() + "/" + getDate.getMonth() + " " + getDate.getFullYear();
+
+        //var setDate = new Date();
+        //setDate.setFullYear(2020)
+        //    ;
+        //document.getElementById("testb").innerHTML = setDate;
+
+        //var date = new Date("Mar 15 2015");
+        // var date = new Date("Mar 15 2015");
         //var date = new Date(99, 06, 11, 12, 32, 23, 23);
         //var date = new Date("2016-12-29");
         //var date = new Date(5000); will measure the time stamp 5000 milliseconds from the initial time
         //full format by default
-        document.getElementById("test").innerHTML = date.toDateString(); 
+        document.getElementById("test").innerHTML = date.toDateString();
         ////can also use to UTC string
 
     </script>
@@ -123,9 +145,9 @@
         //document.write(person);
         //console is great for testing and seeing what is going on
         console.log("Hi there!");
-                        //document.getElementById("test").innerHTML = "Hi there again!";   .innerHTML use for more practical application in websites
-                        //document.write("Hi There!");  .write used inside functions used to test
-                        //alert("Hi there!");
+                            //document.getElementById("test").innerHTML = "Hi there again!";   .innerHTML use for more practical application in websites
+                            //document.write("Hi There!");  .write used inside functions used to test
+                            //alert("Hi there!");
 
 
     </script>
