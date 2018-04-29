@@ -45,14 +45,28 @@
 
     <script>
 
+        var names = ["Daniel", "John", "Jane"];
 
-        var person = {
-            firstName: "Daniel",
-            lastName: "Nielsen",
-            age: 25,
-            pets: ["Frida", "Bella", "Misse"],
-            fullName: function () { return this.firstName + " " + person.lastName;}
-        };
+        //var x = names.pop();  
+        
+        //.pop pulls out the last item in array... line below will display Jane to the view since it is the last item 
+
+        //var x = names.shift();
+
+        //.shift pulls out the first item in the array
+
+        var x = names.push("Frida");
+        document.getElementById("test").innerHTML = x;
+
+        //var person = {
+        //    firstName: "Daniel",
+        //    lastName: "Nielsen",
+        //    age: 25,
+        //    pets: ["Frida", "Bella", "Misse"],
+        //    fullName: function () { return this.firstName + " " + person.lastName;}
+        //};
+
+
         //document.getElementById("test").innerHTML = person.fullName();
         document.getElementById("test").innerHTML = person.pets[0];
         //var name1 = "Daniel";
