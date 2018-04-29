@@ -53,10 +53,20 @@
 
         //var x = names.shift();
 
+
+        //. unshift exists 
         //.shift pulls out the first item in the array
 
-        var x = names.push("Frida");
-        document.getElementById("test").innerHTML = x;
+        //.push will add 
+        //var x = names.push("Frida");
+        //names[0] = "Nick";
+        var x = names.splice(1, 2,"Frida", "Bella");
+        document.getElementById("test").innerHTML = names;
+        //outputs "Nick"
+
+        //document.getElementById("test").innerHTML = x;
+
+        //x will give 4 at this point since there are 4 items within the array
 
         //var person = {
         //    firstName: "Daniel",
