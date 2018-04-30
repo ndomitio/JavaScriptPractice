@@ -44,31 +44,54 @@
         <p id="testb"></p>*@
 
     <script>
+        var day = "Wednesday";
 
-        var x = 48938;
-        if (x == 1) {
-            document.getElementById("test").innerHTML = "It is 1";
+        switch (new Date().getDay()) {
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3: "Wednesday";
+                break;
+            case 4: "Thursday";
+                break;
+            case 5: "Friday";
+                break;
+            case 6 :"Saturday";
+                break;
+            case 0: "Sunday";
+                default: "I don't know?"
+                
         }
-        else if (x == 2) {
-            document.getElementById("test").innerHTML = "It is 2";
-        }
-        else {
-            document.getElementById("test").innerHTML = "It is something else";
-        }
-    
+
+        document.getElementById("test").innerHTML = "It is " + day;
+
+        //var x = 48938;
+        //if (x == 1) {
+        //    document.getElementById("test").innerHTML = "It is 1";
+        //}
+        //else if (x == 2) {
+        //    document.getElementById("test").innerHTML = "It is 2";
+        //}
+        //else {
+        //    document.getElementById("test").innerHTML = "It is something else";
+        //}
+
         //var names = ["Daniel", "John", "Jane"];
 
-        //var x = names.pop();  
-        
-        //.pop pulls out the last item in array... line below will display Jane to the view since it is the last item 
+        //var x = names.pop();
+
+        //.pop pulls out the last item in array... line below will display Jane to the view since it is the last item
 
         //var x = names.shift();
 
 
-        //. unshift exists 
+        //. unshift exists
         //.shift pulls out the first item in the array
 
-        //.push will add 
+        //.push will add
         //var x = names.push("Frida");
         //names[0] = "Nick";
         //var x = names.splice(1, 2,"Frida", "Bella");
@@ -189,9 +212,9 @@
         //document.write(person);
         //console is great for testing and seeing what is going on
         console.log("Hi there!");
-                                //document.getElementById("test").innerHTML = "Hi there again!";   .innerHTML use for more practical application in websites
-                                //document.write("Hi There!");  .write used inside functions used to test
-                                //alert("Hi there!");
+                                    //document.getElementById("test").innerHTML = "Hi there again!";   .innerHTML use for more practical application in websites
+                                    //document.write("Hi There!");  .write used inside functions used to test
+                                    //alert("Hi there!");
 
 
     </script>
