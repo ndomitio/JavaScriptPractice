@@ -9,10 +9,22 @@
 <body>
     <p id="text"></p>
     <p id="text2"></p>
+    <p id="test"></p>
 
 
 
     <script>
+
+
+        //one function does one specific thing, it has a single task
+
+        function myFunction(person, date) {
+            //document.getElementById("test").innerHTML =
+            return person + " is attending the meeting on " + date;           
+        }
+
+        document.getElementById("test").innerHTML= myFunction("dan", "thursday");
+
         var string = "Same text";
         var number = String(10);
         var boolean = true;
