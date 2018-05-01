@@ -1,7 +1,29 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p id="text"></p>
+
+
+
+    <script>
+        var text = "";
+
+        for (var i = 0; i < 10; i++) {
+            if (i == 4) {
+                //break; to stop the loop
+                continue;
+            }
+            text += i + "<br>";
+
+        }
+
+        document.getElementById("text").innerHTML = text;
+    </script>
+</body>
+</html>
