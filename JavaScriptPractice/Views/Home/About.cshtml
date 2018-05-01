@@ -7,16 +7,25 @@
     <title></title>
 </head>
 <body>
-<p id="text"></p>
+    <p id="text"></p>
+    <p id="text2"></p>
 
 
 
     <script>
+        var string = "Same text";
+        var number = String(10);
+        var boolean = true;
+        function func() { };
+        var person = { name: "Daniel", age: 26, eyecolor: "blue" };
+        document.getElementById("text2").innerHTML = typeof number;
+
         var text = "";
 
         for (var i = 0; i < 10; i++) {
             if (i == 4) {
                 //break; to stop the loop
+                //continue will stop at i==4, but then continue
                 continue;
             }
             text += i + "<br>";
