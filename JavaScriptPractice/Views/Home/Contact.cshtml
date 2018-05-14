@@ -11,15 +11,23 @@
     //const z = 10;
 
     function example() {
-        console.log(i);
-        for (var i = 0; i < 10; i++) {
-            //output
-        }
-        var x = 10;
-        if (x < 20) {
-            var y = 30;
-        }
-        console.log(i);
-    }
+        //cant reassign value to a const later on, but you can change the value of the objects properties
+        const x = { x: 10, y: 20 };
 
+        x.x = 20;
+        console.log(x.x);
+        
+        //    console.log(x);
+    //    //var i, x, y;
+    //    //this i only exists within the loop bc of let
+    //    for (let i = 0; i < 10; i++) {
+    //        //output
+    //    }
+    //   let x = 10;
+    //    if (x < 20) {
+    //        let y = 30;
+    //    }
+    //    console.log(x);
+    }
+    example();
 </script>
